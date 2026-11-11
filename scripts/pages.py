@@ -4,10 +4,10 @@
 import sys, os
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'site')
 SITE = 'https://smartstudycenters.com'   # change here if the client's domain differs
-TEL = '<a href="tel:+919731045709">097310 45709</a>'
+TEL = '<a href="tel:+919731861427">097318 61427</a>'
 MAP = 'https://maps.google.com/?cid=1450289958892343616'
 IG = 'https://www.instagram.com/smart.tutorials_/'
-EMAIL = 'sandya.raksha11@gmail.com'
+EMAIL = 'smartstudycenter2020@gmail.com'
 MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
 HOURS = 'Mon – Sat, 10:00 AM – 9:00 PM'
 GA_ID = ''   # paste the Google Analytics 4 measurement ID here, e.g. 'G-ABC123XYZ'. Empty = no analytics.
@@ -59,7 +59,6 @@ def header(home):
 <div class="topbar">
   <div class="container">
     <div class="left">
-      <a href="tel:+919731045709">{ic('phone')}097310 45709</a>
       <a href="tel:+919731861427">{ic('phone')}097318 61427</a>
       <span class="hide-m">{ic('clock')}{HOURS}</span>
       <span class="hide-m">{ic('pin')}Vijayanagar II Stage, Bengaluru</span>
@@ -85,7 +84,7 @@ def header(home):
   </div>
   <div class="m-nav" id="mnav">
     {m_links}
-    <a href="tel:+919731045709" class="btn btn-yellow">Call 097310 45709</a>
+    <a href="tel:+919731861427" class="btn btn-yellow">Call 097318 61427</a>
   </div>
 </header>
 '''
@@ -97,16 +96,16 @@ def footer(home):
 <footer>
   <div class="container">
     <div class="f-cta">
-      <div><h3>Admissions are open for Class 8, 9, 10 and PUC.</h3><p>Visit us at Vijayanagar II Stage or call to know about batch timings.</p></div>
-      <a href="tel:+919731045709">{ic('phone')}&nbsp; 097310 45709</a>
+      <div><h3>Admissions are open for Class 8, 9 and 10.</h3><p>Visit us at Vijayanagar II Stage or call to know about batch timings.</p></div>
+      <a href="tel:+919731861427">{ic('phone')}&nbsp; 097318 61427</a>
     </div>
   </div>
   <div class="container f-top">
     <div class="about-f">
       <a href="{p}#home" class="logo"><span class="mark" aria-hidden="true"></span><span><span class="name">Smart <span>Tutorials</span></span><small>Vijayanagar, Bengaluru</small></span></a>
-      <p>A unit of Smart Study Center, helping students of Class 8, 9, 10 and PUC learn with clarity and confidence. Gather to learn and grow.</p>
+      <p>A unit of Smart Study Center, helping students of Class 8, 9 and 10 learn with clarity and confidence. Gather to learn and grow.</p>
       <div class="f-social">
-        <a href="tel:+919731045709" aria-label="Call Smart Tutorials">{ic('phone')}</a>
+        <a href="tel:+919731861427" aria-label="Call Smart Tutorials">{ic('phone')}</a>
         <a href="{WA}" target="_blank" rel="noopener" aria-label="WhatsApp (opens in a new tab)">{wa}</a>
         <a href="{IG}" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)">{ic('ig')}</a>
         <a href="mailto:{EMAIL}" aria-label="Email Smart Tutorials">{ic('mail')}</a>
@@ -118,7 +117,6 @@ def footer(home):
       <ul>
         <li><a href="class-8-9-tuition-vijayanagar.html">Class 8 &amp; 9 Tuition</a></li>
         <li><a href="class-10-tuition-vijayanagar.html">Class 10 Tuition</a></li>
-        <li><a href="puc-tuition-vijayanagar.html">PUC Tuition</a></li>
         <li><a href="{p}#reviews">Reviews</a></li>
         <li><a href="{p}#contact">Contact Us</a></li>
       </ul>
@@ -135,7 +133,6 @@ def footer(home):
       <h4>Get in Touch</h4>
       <ul class="ci">
         <li>{ic('pin')}<span>822, 9th Main Road, near Brooklyn National Public School, Vijaya Nagar II Stage, Bengaluru – 560104</span></li>
-        <li>{ic('phone')}<a href="tel:+919731045709">097310 45709</a></li>
         <li>{ic('phone')}<a href="tel:+919731861427">097318 61427</a></li>
         <li>{ic('mail')}{MAIL}</li>
         <li>{ic('clock')}<span>{HOURS}<br>Sunday closed</span></li>
@@ -155,12 +152,12 @@ def footer(home):
 
 <div class="float-btns">
   <a href="#main" class="to-top" id="toTop" aria-label="Back to top">{ic('up')}</a>
-  <a href="tel:+919731045709" class="call" aria-label="Call">{ic('phone')}</a>
+  <a href="tel:+919731861427" class="call" aria-label="Call">{ic('phone')}</a>
   <a href="{WA}" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp (opens in a new tab)">{wa}</a>
 </div>
 
 <nav class="m-bar" aria-label="Quick contact">
-  <a href="tel:+919731045709">{ic('phone')}Call</a>
+  <a href="tel:+919731861427">{ic('phone')}Call</a>
   <a href="{WA}" class="wa-b" target="_blank" rel="noopener">{wa}WhatsApp</a>
   <a href="{p}#enquiry" class="enq-b">Enquire Now</a>
 </nav>
@@ -199,10 +196,10 @@ def course(title, range_, meta, desc, items, icon, extra='', ribbon='', url=''):
       </div>'''
 
 faqs = [
- ('What are the centre timings?', 'The centre is open Monday to Saturday, 10:00 AM to 9:00 PM, and closed on Sunday. Please call to confirm the batch timing for your class, as batches are planned around school and college hours.'),
- ('Which classes and boards do you teach?', 'We teach Class 8, 9, 10 and PUC students, and cover ICSE, CBSE and State syllabus.'),
+ ('What are the centre timings?', 'The centre is open Monday to Saturday, 10:00 AM to 9:00 PM, and closed on Sunday. Please call to confirm the batch timing for your class, as batches are planned around school hours.'),
+ ('Which classes and boards do you teach?', 'We teach Class 8, 9 and 10 students, and cover ICSE, CBSE and State syllabus.'),
  ('Where is Smart Tutorials located?', '822, 9th Main Road, near Brooklyn National Public School, Vijaya Nagar II Stage, Hampi Nagar, RPC Layout, Bengaluru – 560104.'),
- ('Which areas do your students come from?', 'Students come to us from Vijayanagar, Chandra Layout, Nagarbhavi, Attiguppe, Kengeri, Hampi Nagar and RPC Layout. The centre is on 9th Main Road, Vijayanagar II Stage.'),
+ ('Which areas do your students come from?', 'Students come to us from Vijayanagar, Bapuji Nagar, Chandra Layout, Nagarbhavi, Attiguppe, Kengeri, Hampi Nagar and RPC Layout. The centre is on 9th Main Road, Vijayanagar II Stage.'),
  ('Do you offer one-to-one classes?', 'Yes. Along with regular batches, one-to-one sessions are available for students who need extra attention in a subject. Call us to check availability.'),
  ('What are the fees?', f'Fees depend on the class, board and subjects. Please call {TEL} or visit the centre for the current fee details and refund terms, in writing, before you decide.'),
  ('Do you guarantee marks or ranks?', 'No. We do not guarantee marks, ranks or admission anywhere. We focus on clear teaching, regular practice and doubt clearing. Results depend on each student.'),
@@ -214,28 +211,28 @@ def index():
     faq_ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r'<[^>]+>', '', a)}} for q, a in faqs]}, ensure_ascii=False)
     ld = f'''<script type="application/ld+json">
-{{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"{SITE}/#org","name":"Smart Tutorials","description":"Tuition for Class 8, 9, 10 and PUC students, covering ICSE, CBSE and State syllabus.","sameAs":["{MAP}","{IG}"],"alternateName":"Smart Tutorials, a unit of Smart Study Center","url":"{SITE}/","telephone":"+91-97310-45709","email":"{EMAIL}","image":"{SITE}/images/og-image.jpg","logo":"{SITE}/images/brand/smart-tutorials-logo.png","slogan":"Gather to learn and grow","address":{{"@type":"PostalAddress","streetAddress":"822, 9th Main Road, near Brooklyn National Public School, Vijaya Nagar II Stage, Hampi Nagar, RPC Layout","addressLocality":"Bengaluru","addressRegion":"Karnataka","postalCode":"560104","addressCountry":"IN"}},"geo":{{"@type":"GeoCoordinates","latitude":12.9584351,"longitude":77.5365863}},"hasMap":"{MAP}","areaServed":["Vijayanagar","Chandra Layout","Nagarbhavi","Attiguppe","Kengeri","Hampi Nagar","RPC Layout","Bengaluru"],"openingHoursSpecification":[{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"21:00"}}]}}
+{{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"{SITE}/#org","name":"Smart Tutorials","description":"Tuition for Class 8, 9 and 10 students, covering ICSE, CBSE and State syllabus.","sameAs":["{MAP}","{IG}"],"alternateName":"Smart Tutorials, a unit of Smart Study Center","url":"{SITE}/","telephone":"+91-97318-61427","email":"{EMAIL}","image":"{SITE}/images/og-image.jpg","logo":"{SITE}/images/brand/smart-tutorials-logo.png","slogan":"Gather to learn and grow","address":{{"@type":"PostalAddress","streetAddress":"822, 9th Main Road, near Brooklyn National Public School, Vijaya Nagar II Stage, Hampi Nagar, RPC Layout","addressLocality":"Bengaluru","addressRegion":"Karnataka","postalCode":"560104","addressCountry":"IN"}},"geo":{{"@type":"GeoCoordinates","latitude":12.9584351,"longitude":77.5365863}},"hasMap":"{MAP}","areaServed":["Vijayanagar","Bapuji Nagar","Chandra Layout","Nagarbhavi","Attiguppe","Kengeri","Hampi Nagar","RPC Layout","Bengaluru"],"openingHoursSpecification":[{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"21:00"}}]}}
 </script>
 <script type="application/ld+json">
 {faq_ld}
 </script>
 <link rel="preload" as="image" href="images/centre/banner-office.webp" imagesrcset="images/centre/banner-office-960.webp 960w, images/centre/banner-office.webp 1920w" imagesizes="(max-width:768px) 640px, 100vw" fetchpriority="high">
 '''
-    s = head('Class 8–10 &amp; PUC Tuition in Vijayanagar | Smart Tutorials',
-             'Tuition for Class 8, 9, 10 and PUC (ICSE, CBSE, State) in Vijayanagar II Stage, Bengaluru. One-to-one sessions and regular tests. Call 097310 45709.', '', ld)
+    s = head('Class 8, 9 &amp; 10 Tuition in Vijayanagar | Smart Tutorials',
+             'Tuition for Class 8, 9 and 10 (ICSE, CBSE, State) in Vijayanagar II Stage, near Bapuji Nagar, Bengaluru. One-to-one classes. Call 097318 61427.', '', ld)
     s += header(True)
     s += f'''
 <div class="ticker" role="region" aria-label="Notice">
   <b>Notice</b>
-  <div class="run-wrap"><div class="run">Admissions open for Class 8, 9, 10 &amp; PUC &nbsp;•&nbsp; ICSE, CBSE &amp; State &nbsp;•&nbsp; 100% results in 2022–23 and 2024–25 &nbsp;•&nbsp; One-to-one sessions for students who need extra attention &nbsp;•&nbsp; Call 097310 45709 to book a visit</div></div>
+  <div class="run-wrap"><div class="run">Admissions open for Class 8, 9 &amp; 10 &nbsp;•&nbsp; ICSE, CBSE &amp; State &nbsp;•&nbsp; 100% results since 2012 &nbsp;•&nbsp; One-to-one sessions for students who need extra attention &nbsp;•&nbsp; Call 097318 61427 to book a visit</div></div>
 </div>
 
 <main id="main">
 <section class="slider" id="home" aria-roledescription="carousel" aria-label="Smart Tutorials highlights">
   <div class="slides" id="slides">'''
     s += slide('s1','banner-office','At work in the Smart Tutorials office','Admissions Open','h1','Tuition Classes in <span>Vijayanagar</span>, Bengaluru',
-        '<p>Class 8, 9, 10 &amp; PUC · ICSE, CBSE &amp; State · Experienced teachers in a friendly, homely atmosphere.</p>',
-        '<a href="#enquiry" class="btn btn-yellow">Enquire Now</a><a href="tel:+919731045709" class="btn btn-outline">Call 097310 45709</a>', True,
+        '<p>Class 8, 9 &amp; 10 · ICSE, CBSE &amp; State · Experienced teachers in a friendly, homely atmosphere.</p>',
+        '<a href="#enquiry" class="btn btn-yellow">Enquire Now</a><a href="tel:+919731861427" class="btn btn-outline">Call 097318 61427</a>', True,
         '<div class="trust"><span class="stars" aria-hidden="true"><i>★★★★★</i></span><span><b>4.7</b> on Google · 157 reviews, as on 4 Nov 2026</span></div>')
     s += slide('s2','banner-tests','Students writing a test at Smart Tutorials, faces blurred for privacy','Rated 4.7 on Google','h2','Loved by Parents.<br><span>Trusted by Students.</span>',
         '<blockquote>"Teaching quality and quantity is very satisfying." <small>A review on Google</small></blockquote>',
@@ -263,13 +260,13 @@ def index():
 <section class="about" id="about">
   <div class="container">
     <div class="photo">
-      <div class="img"><img src="images/centre/building.webp" srcset="images/centre/building-480.webp 480w, images/centre/building.webp 706w" sizes="(max-width:992px) 90vw, 540px" alt="The Smart Tutorials building on 9th Main Road, Vijayanagar, with its red name board" width="706" height="377" loading="lazy"></div>
+      <div class="img img-logo"><img src="images/centre/about-logo.webp" srcset="images/centre/about-logo-480.webp 480w, images/centre/about-logo.webp 800w" sizes="(max-width:992px) 90vw, 540px" alt="Smart Tutorials logo with the tagline: gather to learn and grow" width="800" height="533" loading="lazy"></div>
       <div class="badge"><b>4.7</b><span>Google Rating</span></div>
     </div>
     <div>
       <p class="eyebrow">About Us</p>
-      <h2>A tuition centre for students in Vijayanagar</h2>
-      <p>Smart Tutorials, a unit of Smart Study Center, is on 9th Main Road, Vijayanagar II Stage, near Brooklyn National Public School. We teach Class 8, 9, 10 and PUC students from ICSE, CBSE and State syllabus, in the Hampi Nagar and RPC Layout area of Vijayanagar. Students join us from across Vijayanagar, Chandra Layout, Nagarbhavi, Attiguppe and Kengeri.</p>
+      <h2>A Tuition Centre for Students in Vijayanagar</h2>
+      <p>Smart Tutorials, a unit of Smart Study Center, is on 9th Main Road, Vijayanagar II Stage, near Brooklyn National Public School. We teach Class 8, 9 and 10 students from ICSE, CBSE and State syllabus, in the Hampi Nagar and RPC Layout area of Vijayanagar. Students join us from across Vijayanagar, Bapuji Nagar, Chandra Layout, Nagarbhavi, Attiguppe and Kengeri.</p>
       <p class="vision">We want every student to walk out of our classes sure of what they have learned, responsible for their own work and ready to do their very best.</p>
       <blockquote>"Teachers are approachable and homely atmosphere and best place for students." <small>A review on Google</small></blockquote>
       <ul class="checks">
@@ -287,12 +284,11 @@ def index():
   <div class="container">
     <div class="sec-title">
       <h2>Our <span>Courses</span></h2>
-      <p>Class 8, 9, 10 and PUC tuition in Vijayanagar, Bengaluru, with batch and one-to-one options.</p>
+      <p>Class 8, 9 and 10 tuition in Vijayanagar, Bengaluru, with batch and one-to-one options.</p>
     </div>
     <div class="courses-grid">'''
     s += course('Class 8 &amp; 9','High School',['ICSE','CBSE','State'],'Strong understanding in every core subject before the board year.',['Maths &amp; Science','Social Science','English &amp; languages'],'book',url='class-8-9-tuition-vijayanagar.html')
     s += course('Class 10','SSLC',['ICSE','CBSE','State'],'Special coaching for the board year, with regular tests and revision.',['Maths, Physics, Chemistry, Biology','Social Science &amp; languages','Board exam preparation'],'star',' popular','<span class="ribbon">Special</span>',url='class-10-tuition-vijayanagar.html')
-    s += course('PUC','I &amp; II PUC',['Karnataka PUC'],'Coaching for pre-university students. Call us to check the subjects and batches running now.',['Subject-wise coaching','Regular tests','Doubt clearing'],'users',url='puc-tuition-vijayanagar.html')
     s += f'''
     </div>
     <div class="boards"><span>ICSE</span><span>CBSE</span><span>State Board</span><span>One-to-One Classes</span></div>
@@ -313,7 +309,7 @@ def index():
         <li>{ic('check')}Open till 9 PM</li>
       </ul>
       <div class="btns">
-        <a href="tel:+919731045709" class="btn btn-yellow">{ic('phone')} Call Now</a>
+        <a href="tel:+919731861427" class="btn btn-yellow">{ic('phone')} Call Now</a>
         <a href="#courses" class="btn btn-outline">View Courses</a>
       </div>
       <div class="rating-line"><span class="g">Google</span><span><b>4.7</b> out of 5 · 157 reviews, as on 4 Nov 2026</span></div>
@@ -335,11 +331,11 @@ def index():
         <div class="two">
           <div>
             <label for="fClass">Class</label>
-            <select id="fClass"><option value="">Select</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>I PUC</option><option>II PUC</option></select>
+            <select id="fClass"><option value="">Select</option><option>Class 8</option><option>Class 9</option><option>Class 10</option></select>
           </div>
           <div>
             <label for="fBoard">Board</label>
-            <select id="fBoard"><option value="">Select</option><option>ICSE</option><option>CBSE</option><option>State</option><option>Karnataka PUC</option></select>
+            <select id="fBoard"><option value="">Select</option><option>ICSE</option><option>CBSE</option><option>State</option></select>
           </div>
         </div>
         <div>
@@ -351,13 +347,13 @@ def index():
           <p class="field-err" id="fConsentErr">Please tick this box to continue.</p>
         </div>
         <button class="btn btn-wa" type="submit">{wa}Continue on WhatsApp</button>
-        <p class="note">This website does not store your details. They reach us only when you press send in WhatsApp. Or call <a href="tel:+919731045709"><b>097310 45709</b></a>.</p>
+        <p class="note">This website does not store your details. They reach us only when you press send in WhatsApp. Or call <a href="tel:+919731861427"><b>097318 61427</b></a>.</p>
       </form>
       <div class="form-ok" id="formOk" tabindex="-1" role="status">
         <h4>Almost done</h4>
         <p>Your message is ready in WhatsApp. Press send there, and your enquiry reaches us.</p>
         <a id="waSend" class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/919731045709">{wa}Open WhatsApp</a>
-        <p class="alt">No WhatsApp? Call <a href="tel:+919731045709">097310 45709</a>.</p>
+        <p class="alt">No WhatsApp? Call <a href="tel:+919731861427">097318 61427</a>.</p>
       </div>
     </div>
   </div>
@@ -404,7 +400,7 @@ def index():
       <div class="step fade-in"><div class="circle"><b>1</b>{ic('phone')}</div><div><h3 class="h4">Call or Enquire</h3><p>Call us or fill the enquiry form with your child's class and board.</p></div></div>
       <div class="step fade-in"><div class="circle"><b>2</b>{ic('pin')}</div><div><h3 class="h4">Visit the Centre</h3><p>Come to 9th Main Road, Vijayanagar and meet our teachers.</p></div></div>
       <div class="step fade-in"><div class="circle"><b>3</b>{ic('book')}</div><div><h3 class="h4">Confirm Timing &amp; Fees</h3><p>Ask about batch timings, and get the fee and refund terms in writing.</p></div></div>
-      <div class="step fade-in"><div class="circle"><b>4</b>{ic('check')}</div><div><h3 class="h4">Join the Batch</h3><p>Pick a batch or one-to-one timing that fits school or college hours.</p></div></div>
+      <div class="step fade-in"><div class="circle"><b>4</b>{ic('check')}</div><div><h3 class="h4">Join the Batch</h3><p>Pick a batch or one-to-one timing that fits school hours.</p></div></div>
     </div>
   </div>
 </section>
@@ -436,7 +432,7 @@ def index():
   <div class="container">
     <div class="sec-title">
       <h2>Our <span>Toppers</span></h2>
-      <p><b>100% results in 2022–23 and 2024–25.</b> Class 10 and PUC results of our students, shown with written permission from each student and parent. Results depend on each student's own effort, and we do not guarantee marks for future batches.</p>
+      <p><b>100% results since 2012.</b> Class 10 results of our students, shown with written permission from each student and parent. Results depend on each student's own effort, and we do not guarantee marks for future batches.</p>
     </div>
     <div class="res-grid">
       <figure class="fade-in"><a href="images/results/toppers-2024-25.webp" target="_blank" rel="noopener" aria-label="Toppers, 2024–25: open full size (new tab)"><img src="images/results/toppers-2024-25.webp" srcset="images/results/toppers-2024-25-700.webp 700w, images/results/toppers-2024-25.webp 1381w" sizes="(max-width:768px) 100vw, 1140px" width="1381" height="976" loading="lazy" alt="Poster of Smart Tutorials SSLC toppers (ICSE, CBSE and State) and 12th CBSE and PUC toppers for academic year 2024-25, with each student's photo, name and percentage"></a><figcaption>Toppers, 2024–25<small>Tap to view full size</small></figcaption></figure>
@@ -445,8 +441,7 @@ def index():
     </div>
     <div class="res-list fade-in">
       <div><h3 class="h4">Class 10 toppers, 2024–25</h3><p>SSLC, ICSE and CBSE</p><div class="tbl"><table><tr><th scope="col">Student</th><th scope="col">Score</th></tr><tr><td>Shukthi R</td><td>98%</td></tr><tr><td>Deeksha K</td><td>97%</td></tr><tr><td>Raksha R</td><td>95.2%</td></tr><tr><td>Tanishka</td><td>95%</td></tr><tr><td>Bhagath Vinayak</td><td>93.2%</td></tr><tr><td>Samith Shetty</td><td>93%</td></tr><tr><td>Madan Gowda</td><td>93%</td></tr><tr><td>Pratith S</td><td>93%</td></tr><tr><td>Rajesh</td><td>92%</td></tr><tr><td>Megha</td><td>92%</td></tr><tr><td>Mohith</td><td>92%</td></tr><tr><td>Hemashree</td><td>91%</td></tr><tr><td>Shravani S M</td><td>91%</td></tr><tr><td>Gamana</td><td>90%</td></tr><tr><td>Arjun</td><td>90%</td></tr><tr><td>Tanisha C</td><td>89%</td></tr><tr><td>Ardra Ajay</td><td>88%</td></tr></table></div></div>
-      <div><h3 class="h4">12th and II PUC toppers, 2024–25</h3><div class="tbl"><table><tr><th scope="col">Student</th><th scope="col">Score</th><th scope="col">Exam</th></tr><tr><td>Anushka</td><td>96%</td><td>CBSE 12th</td></tr><tr><td>Anusha</td><td>91%</td><td>II PUC</td></tr><tr><td>Anushree</td><td>90%</td><td>II PUC</td></tr><tr><td>Rachana Gowda</td><td>89%</td><td>II PUC</td></tr><tr><td>Ira</td><td>87%</td><td>CBSE 12th</td></tr><tr><td>Sowbhagya</td><td>87%</td><td>II PUC</td></tr></table></div>
-      <h3 class="h4">Class 10 toppers, 2022–23</h3><p>ICSE, State and CBSE</p><div class="tbl"><table><tr><th scope="col">Student</th><th scope="col">Score</th></tr><tr><td>Harsha J</td><td>97%</td></tr><tr><td>Krupa</td><td>96.8%</td></tr><tr><td>Harshini</td><td>96.7%</td></tr><tr><td>Anushka</td><td>96%</td></tr><tr><td>Ira</td><td>94%</td></tr><tr><td>Prathyush</td><td>93.7%</td></tr></table></div></div>
+      <div><h3 class="h4">Class 10 toppers, 2022–23</h3><p>ICSE, State and CBSE</p><div class="tbl"><table><tr><th scope="col">Student</th><th scope="col">Score</th></tr><tr><td>Harsha J</td><td>97%</td></tr><tr><td>Krupa</td><td>96.8%</td></tr><tr><td>Harshini</td><td>96.7%</td></tr><tr><td>Anushka</td><td>96%</td></tr><tr><td>Ira</td><td>94%</td></tr><tr><td>Prathyush</td><td>93.7%</td></tr></table></div></div>
     </div>
   </div>
 </section>
@@ -478,7 +473,7 @@ def index():
       <div class="help">
         <h3 class="h4">Still have a question?</h3>
         <p>Talk to us directly. We're happy to help.</p>
-        <a href="tel:+919731045709" class="btn btn-yellow">Call 097310 45709</a>
+        <a href="tel:+919731861427" class="btn btn-yellow">Call 097318 61427</a>
       </div>
     </div>
     <div>
@@ -494,7 +489,7 @@ def index():
       <p>Visit the centre, meet the teachers and ask your questions.</p>
     </div>
     <div class="btns">
-      <a href="tel:+919731045709" class="btn btn-navy">Call 097310 45709</a>
+      <a href="tel:+919731861427" class="btn btn-navy">Call 097318 61427</a>
       <a href="#enquiry" class="btn btn-line">Enquire Now</a>
     </div>
   </div>
@@ -506,8 +501,8 @@ def index():
       <div class="sec-title sec-left"><h2>Contact <span>Us</span></h2></div>
       <div class="c-list">
         <div class="c-item"><span class="ico">{ic('pin')}</span><div><h3 class="h4">Address</h3><p>822, 9th Main Road, near Brooklyn National Public School, Vijaya Nagar II Stage, Hampi Nagar, RPC Layout, Bengaluru, Karnataka 560104</p></div></div>
-        <div class="c-item"><span class="ico">{ic('phone')}</span><div><h3 class="h4">Phone &amp; WhatsApp</h3><a href="tel:+919731045709">097310 45709</a></div></div>
         <div class="c-item"><span class="ico">{ic('phone')}</span><div><h3 class="h4">Phone</h3><a href="tel:+919731861427">097318 61427</a></div></div>
+        <div class="c-item"><span class="ico">{wa}</span><div><h3 class="h4">WhatsApp</h3><a href="{WA}" target="_blank" rel="noopener">097310 45709</a></div></div>
         <div class="c-item"><span class="ico">{ic('mail')}</span><div><h3 class="h4">Email</h3>{MAIL}</div></div>
         <div class="c-item"><span class="ico">{ic('ig')}</span><div><h3 class="h4">Instagram</h3><a href="{IG}" target="_blank" rel="noopener">@smart.tutorials_</a></div></div>
         <div class="c-item"><span class="ico">{ic('clock')}</span><div><h3 class="h4">Timings</h3><p>{HOURS}<br>Sunday closed</p></div></div>
@@ -602,7 +597,6 @@ disclosures = page('disclosures.html','Disclosures &amp; Helplines','Courses, te
 <tr><th scope="col">Course</th><th scope="col">Syllabus</th><th scope="col">Mode</th></tr>
 <tr><td>Class 8 &amp; 9</td><td>ICSE, CBSE, State</td><td>Classroom batches, one-to-one on request</td></tr>
 <tr><td>Class 10</td><td>ICSE, CBSE, State (SSLC)</td><td>Classroom batches, one-to-one on request</td></tr>
-<tr><td>I &amp; II PUC</td><td>Karnataka PUC</td><td>Please call for current subjects and batches</td></tr>
 </table></div>
 <p>Our courses are private coaching. They are not a school programme and do not lead to a certificate or degree from a recognised board or university.</p>
 <h2>Teachers' qualifications</h2>
@@ -617,7 +611,7 @@ disclosures = page('disclosures.html','Disclosures &amp; Helplines','Courses, te
 <p>Fees depend on the class, board and subjects. Please call {TEL} for the current fee and ask for the fee and refund terms in writing before you pay.</p>
 <h2>Results and reviews</h2>
 <p><b>We do not guarantee marks, ranks or admission.</b> Joining any tuition programme does not assure success in an examination.</p>
-<p>"100% results" refers to our students' board exam results in 2022–23 and 2024–25. Past results do not promise the same result for any future student. Ask at the centre to see the records behind this claim.</p>
+<p>"100% results" refers to our students' board exam results every year since 2012. Past results do not promise the same result for any future student. Ask at the centre to see the records behind this claim.</p>
 <p>Our Google rating of 4.7 is from 157 reviews, as on 4 November 2026, and it changes over time. You can <a href="{MAP}" target="_blank" rel="noopener">read all the reviews on Google</a>. We use a student's name, photo or result in advertising only with written consent. The toppers shown on our home page are shared with written permission from each student and parent.</p>
 <h2>Complaints</h2>
 <p>Please tell us first. Call {TEL}, email {MAIL} or write to the centre's office, and we will try to resolve your concern quickly. You may also contact the National Consumer Helpline on <a href="tel:1915">1915</a>.</p>
@@ -637,9 +631,9 @@ nf = head('Page Not Found | Smart Tutorials','This page could not be found on th
 <main id="main"><div class="notfound"><div class="container">
 <h1>Page not found</h1>
 <p>The page you are looking for is not here.</p>
-<div class="btns"><a class="btn btn-red" href="./">Go to home page</a><a class="btn btn-navy" href="tel:+919731045709">Call 097310 45709</a></div>
+<div class="btns"><a class="btn btn-red" href="./">Go to home page</a><a class="btn btn-navy" href="tel:+919731861427">Call 097318 61427</a></div>
 <h2>Popular pages</h2>
-<ul class="nf-links"><li><a href="class-8-9-tuition-vijayanagar.html">Class 8 &amp; 9 Tuition</a></li><li><a href="class-10-tuition-vijayanagar.html">Class 10 Tuition</a></li><li><a href="puc-tuition-vijayanagar.html">PUC Tuition</a></li><li><a href="./#results">Our Toppers</a></li></ul>
+<ul class="nf-links"><li><a href="class-8-9-tuition-vijayanagar.html">Class 8 &amp; 9 Tuition</a></li><li><a href="class-10-tuition-vijayanagar.html">Class 10 Tuition</a></li><li><a href="./#results">Our Toppers</a></li></ul>
 </div></div></main>
 ''' + footer(False)
 
@@ -675,7 +669,7 @@ def course_page(path, short, title, desc, h1, sub, img, img_w, img_h, alt, cap, 
 <div class="course-cta">
 <h2>Talk to us before you decide</h2>
 <p>Tell us the class and board, and we will explain the batches and timings.</p>
-<a class="btn btn-yellow" href="tel:+919731045709">Call 097310 45709</a>
+<a class="btn btn-yellow" href="tel:+919731861427">Call 097318 61427</a>
 <a class="btn btn-wa" href="https://wa.me/919731045709?text=Hi%2C%20I%20would%20like%20to%20know%20about%20{wa_msg}" target="_blank" rel="noopener">{wa}WhatsApp us</a>
 </div>
 <h2>Questions parents ask</h2>
@@ -689,7 +683,6 @@ def course_page(path, short, title, desc, h1, sub, img, img_w, img_h, alt, cap, 
 
 C89 = 'class-8-9-tuition-vijayanagar.html'
 C10 = 'class-10-tuition-vijayanagar.html'
-PUC = 'puc-tuition-vijayanagar.html'
 
 class89 = course_page(C89, 'Class 8 &amp; 9 Tuition',
   'Class 8 &amp; 9 Tuition in Vijayanagar | Smart Tutorials',
@@ -723,9 +716,9 @@ class89 = course_page(C89, 'Class 8 &amp; 9 Tuition',
 </ul>
 ''', [
   ('Should my child start tuition in Class 8, or wait for Class 10?', 'It depends on the child. If one subject is already difficult, starting earlier usually means fewer gaps to fill in Class 10. If school is going well, you may not need it yet. Call us or visit the centre, and we can talk it through.'),
-  ('Can my child join for only one subject?', 'Please call us on 097310 45709. We will tell you which subject batches are running and whether a one-to-one session would suit better.'),
+  ('Can my child join for only one subject?', 'Please call us on 097318 61427. We will tell you which subject batches are running and whether a one-to-one session would suit better.'),
   ('Do you teach all three boards together?', 'We cover ICSE, CBSE and State syllabus. Tell us your child\'s board when you enquire, and we will explain how the batch works for it.'),
-], [(C10, 'Class 10 Tuition'), (PUC, 'PUC Tuition')])
+], [(C10, 'Class 10 Tuition')])
 
 class10 = course_page(C10, 'Class 10 Tuition',
   'Class 10 Tuition in Vijayanagar, Bengaluru | Smart Tutorials',
@@ -760,36 +753,14 @@ class10 = course_page(C10, 'Class 10 Tuition',
 </ul>
 ''', [
   ('When should a Class 10 student join tuition?', 'As early in the year as you can, because there is more time to fix weak topics. Students can also enquire mid-year. Call us to check which batches have room.'),
-  ('Is there a separate batch for SSLC, CBSE and ICSE?', 'Please call us on 097310 45709 for this year\'s batch details. Tell us your child\'s board and subjects, and we will explain how classes work for them.'),
-], [(C89, 'Class 8 &amp; 9 Tuition'), (PUC, 'PUC Tuition')])
+  ('Is there a separate batch for SSLC, CBSE and ICSE?', 'Please call us on 097318 61427 for this year\'s batch details. Tell us your child\'s board and subjects, and we will explain how classes work for them.'),
+], [(C89, 'Class 8 &amp; 9 Tuition')])
 
-puc = course_page(PUC, 'PUC Tuition',
-  'PUC Tuition in Vijayanagar, Bengaluru | Smart Tutorials',
-  'I PUC and II PUC tuition in Vijayanagar II Stage, Bengaluru. Subject-wise coaching, regular tests and doubt clearing. Call 097310 45709 for current batches.',
-  'PUC Tuition in Vijayanagar, Bengaluru', 'Coaching for I PUC and II PUC students',
-  'office', 960, 720, 'A staff member working at a desk in the Smart Tutorials office, Vijayanagar', 'Our office at the Vijayanagar centre.', f'''
-<p>I PUC and II PUC, the Karnataka equivalent of Class 11 and 12, are a real jump from high school. Chapters are longer, concepts go deeper, and college timings leave less room for catching up alone. Our PUC coaching gives students a fixed place to work through their subjects, take regular tests and ask questions.</p>
-<h2>Tell us your combination</h2>
-<p>PUC students take different subject combinations, such as PCMB or PCMC, so the first step is simple: call us with your stream, subjects and college timing. We will tell you honestly which subjects and batches are running now.</p>
-<h2>How classes work</h2>
-<ul>
-<li><b>Subject-wise coaching</b> focuses on the subjects you need help with.</li>
-<li><b>Regular tests</b> keep preparation steady through the year, not only before exams.</li>
-<li><b>Doubt clearing</b> gives you time to ask about what you did not follow in college.</li>
-<li><b>One-to-one sessions</b> may be available when you need extra help in one subject.</li>
-</ul>
-<h2>Getting ready for I PUC</h2>
-<p>If you have just finished Class 10, the weeks before college are a good time to get ahead. Revise the Class 10 chapters that PUC builds on, especially in Maths and Science, and look through your new textbooks. Starting college with fewer gaps makes the first few months much easier.</p>
-''', [
-  ('Do you coach both I PUC and II PUC?', 'Yes, our centre takes PUC students. Subjects and batches can change each year, so please call us on 097310 45709 to confirm what is running now.'),
-  ('Will the timings clash with college?', 'Batches are planned around school and college hours. Share your college timing when you call, and we will tell you what fits.'),
-], [(C89, 'Class 8 &amp; 9 Tuition'), (C10, 'Class 10 Tuition')])
-
-course_pages = [(C89, class89), (C10, class10), (PUC, puc)]
+course_pages = [(C89, class89), (C10, class10)]
 
 for name, html in [('index.html', index()), ('privacy.html', privacy), ('terms.html', terms), ('disclosures.html', disclosures), ('404.html', nf)] + course_pages:
     open(os.path.join(OUT, name), 'w', encoding='utf-8', newline='\n').write(html)
 open(os.path.join(OUT, 'robots.txt'), 'w', newline='\n').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
-urls = ''.join(f'  <url><loc>{SITE}/{p}</loc><lastmod>2026-11-08</lastmod></url>\n' for p in ['', 'class-8-9-tuition-vijayanagar.html', 'class-10-tuition-vijayanagar.html', 'puc-tuition-vijayanagar.html', 'disclosures.html', 'privacy.html', 'terms.html'])
+urls = ''.join(f'  <url><loc>{SITE}/{p}</loc><lastmod>2026-11-11</lastmod></url>\n' for p in ['', 'class-8-9-tuition-vijayanagar.html', 'class-10-tuition-vijayanagar.html', 'disclosures.html', 'privacy.html', 'terms.html'])
 open(os.path.join(OUT, 'sitemap.xml'), 'w', newline='\n').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
 print('built')

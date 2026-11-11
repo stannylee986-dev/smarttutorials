@@ -9,7 +9,7 @@ const src = join(root, 'site');
 const dist = join(root, 'dist');
 const INCLUDE = [
   'index.html', 'class-8-9-tuition-vijayanagar.html', 'class-10-tuition-vijayanagar.html',
-  'puc-tuition-vijayanagar.html', 'disclosures.html', 'privacy.html', 'terms.html', '404.html',
+  'disclosures.html', 'privacy.html', 'terms.html', '404.html',
   'robots.txt', 'sitemap.xml', 'favicon.ico', 'apple-touch-icon.png', 'assets', 'images',
 ];
 
