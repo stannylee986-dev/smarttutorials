@@ -10,7 +10,7 @@ IG = 'https://www.instagram.com/smart.tutorials_/'
 EMAIL = 'smartstudycenter2020@gmail.com'
 MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
 HOURS = 'Mon – Sat, 10:00 AM – 9:00 PM'
-GA_ID = ''   # paste the Google Analytics 4 measurement ID here, e.g. 'G-ABC123XYZ'. Empty = no analytics.
+GA_ID = 'G-CSGF3MKE8M'   # paste the Google Analytics 4 measurement ID here, e.g. 'G-ABC123XYZ'. Empty = no analytics.
 WA = 'https://wa.me/919731045709?text=Hi%2C%20I%20would%20like%20to%20know%20about%20tuition%20classes'
 ic = lambda n, cls='i': f'<svg class="{cls}" aria-hidden="true"><use href="assets/icons.svg#{n}"/></svg>'
 wa = '<svg aria-hidden="true"><use href="assets/icons.svg#wa"/></svg>'
