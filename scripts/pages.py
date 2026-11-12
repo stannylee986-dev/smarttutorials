@@ -3,7 +3,7 @@
 # Run: npm run pages. Writes into site/. Edit page text here, not in the generated HTML.
 import sys, os
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'site')
-SITE = 'https://smartstudycenters.com'   # change here if the client's domain differs
+SITE = 'https://smarttutorial.in'   # change here if the client's domain differs
 TEL = '<a href="tel:+919731861427">097318 61427</a>'
 MAP = 'https://maps.google.com/?cid=1450289958892343616'
 IG = 'https://www.instagram.com/smart.tutorials_/'
